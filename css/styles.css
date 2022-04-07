@@ -1,1 +1,48 @@
+a.brand-logo {
+	color: #000000;
+	font-weight: bolder;
+}
+
+html,body {
+	font-family: Balsamiq Sans !important;
+	
+	background-color: rgb(122, 122, 122);
+}
+
+.nav-wrapper ul li a {
+	color: #000000;
+	
+}
+
+.page-footer, .footer-copyright {
+	background-color: rgb(122, 122, 122) !important;
+}
+
+.sidenav-trigger {
+	color: #000000;
+}
+
+.spacer {
+	height: 50px;
+}
+
+.cardStyle {
+	padding: 20px;
+}
+
+.balance {
+	font-size: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.cardSpacer {
+	height: 15px;
+}
+
+.evenCard {
+	min-height: 300px;
+	max-height: 400px;
+}
+
 
