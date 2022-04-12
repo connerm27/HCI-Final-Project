@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+
+	<!--
+	*****************************************************
+	Group Members: Conner Montgomery, *place names here*
+
+    Project: RentManager
+
+	Notes:  We used an open-source CSS Framework called MaterializeCSS.  It works similar to bootstrap 
+    and allowed us to use the predefined css to better and more consistently design our UI, as well as
+    integrate the "grid system" for responsive layout.  
+	*****************************************************
+    -->
+	
+	<head>
+		<!-- HTML Setup -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		
+		<!-- Title of Webpage (in tab) --->
+		<title>RentManager</title>
+
+  		<!-- CSS  -->
+  		<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	</head>
+
+	<body>
+		
+		<!-- NAVIGATION BAR -->
+	
+		<nav class="white" role="navigation">
+			<!-- Div contains nav-wrapper class, and container class, a is for Logo -->
+			<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">RentManager</a>
+				<!-- Menu show on large Screens -->
+				<ul class="right hide-on-med-and-down">
+        			<li><a href="index.html">Home</a></li>
+					<li><a href="pay-rent.html">Pay Rent</a></li>
+					<li><a href="maintenance-request.html">Maintenance Request</a></li>
+					<li><a href="message-landlord.html">Message Landlord</a></li>
+					<li><a href="my-profile.html">My Profile</a></li>
+				</ul>
+				<!-- Menu show on small screens -->
+      			<ul id="nav-mobile" class="sidenav">
+        			<li><a href="index.html">Home</a></li>
+					<li><a href="pay-rent.html">Pay Rent</a></li>
+					<li><a href="maintenance-request.html">Maintenance Request</a></li>
+					<li><a href="message-landlord.html">Message Landlord</a></li>
+					<li><a href="my-profile.html">My Profile</a></li>
+      			</ul>
+				<!-- Shows hamburger icon on small screens -->
+      			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    		</div>
+			
+		</nav>
+		
+		<!-- NAVIGATION BAR END -->
+		
+		
+		<div class="spacer"></div>
+		
+		
+		<!-- BODY CONTENT -->
+		
+		<div class="container">
+			<div class="row">
+				<!-- Month Rent Due -->
+				<div class="col s12 m6">
+					<div class="cardStyle white evenCard">
+						<!-- Card Heading H6 -->
+						<h6><b>April Rent Due</b></h6>
+							<p class="balance">$675.00</p>
+							<p>$675.00 is due by April 1st, 2022</p>
+							<p><b>Previous Month:</b></p>
+							<p class="close">Transaction Amount: $675.00</p>
+							<p class="close">Paid on: 02/28/2022</p>
+							<p class="close">Rent Period: 03/01/2022 - 03/31/2022</p>
+					
+					
+					</div>
+				</div>
+				
+				<!-- Pay Outstanding Balance -->
+				<div class="col s12 m6">
+					<div class="cardStyle white">
+						<!-- Card Heading H6 -->
+						<h6><b>Pay Outstanding Balance</b></h6>
+							<p class="balance">$675.00</p>
+							<!-- Segmented Control -->
+						<div class="cardSpacer"></div>
+						  <!-- Switch -->
+  						<div class="switch">
+    						<label>
+								Bank Account
+      						<input type="checkbox">
+							<span class="lever"></span>
+								Credit Card
+    						</label>
+  						</div>
+						
+						<!-- My Form Div -->
+						<div class="myForm">
+							<div class="cardSpacer"></div>
+							 <input placeholder="   Full Name" id="first_name" type="text" class="myField">
+							 
+							<input placeholder="   Routing Number" id="first_name" type="text" class="myField">
+							
+							 <input placeholder="   Account Number" id="first_name" type="text" class="myField">
+							
+							 <input placeholder="   Confirm Account Number" id="first_name" type="text" class="myField">
+						
+							  <input placeholder="   Amount ($675.00)" id="first_name" type="text" class="myField">
+								<div class="cardSpacer"></div>
+							  <a href="submit.html" class="custom-button">Pay Rent</a>
+						</div>
+						<div class="spacer"></div>
+					
+						<!-- Check Mark Code -->
+						<form action="#">
+						  <p class="myCheck">
+      						<label>
+								<input class="with-gap" name="group1" type="checkbox"/>
+        						<span>Save Payment Details</span>
+      						</label>
+    					</p>
+						</form>
+						
+						<!-- End of card -->
+						<div class="cardSpacer"></div>
+						<p>Note: Rent payment date is based on date of submission</p>
+						<div class="cardSpacer"></div>
+					</div>
+				</div>
+				
+				<!-- third card in row, pulled up to fit with the rest -->
+				<div class="col s12 m6">
+					<div class="cardStyle white pullUp">
+						<!-- Card Heading H6 -->
+						<h6><b>Auto-Pay</b></h6>
+							<p>Never miss a month of rent!  Simply select an account and hit submit.  We will charge the payment method on the 28th of every month.  </p>
+							<p><b>Select Payment Method</b></p>
+						
+							  <form action="#">
+									<p>
+									  <label>
+										<input name="group1" type="radio" checked />
+										<span>Account Ending in 3579</span>
+									  </label>
+									</p>
+									<p>
+									  <label>
+										<input name="group1" type="radio" />
+										<span>Credit Card Ending in 1432</span>
+									  </label>
+									</p>
+							  </form>
+								<div class="cardSpacer"></div>
+								<a href="submit.html" class="custom-button">Auto-Pay</a>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		<!-- END BODY CONTENT -->
+		
+		
+		<!-- FOOTER -->
+		
+		<footer class="page-footer">
+			<div class="footer-copyright">
+				<div class="container center">
+					Copyright 2022 &#169; RentManager
+      			</div>
+			</div>
+		</footer>
+		
+		
+		<!-- FOOTER END -->
+		
+		<!--  Scripts-->
+  		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  		<script src="js/materialize.min.js"></script>
+		<script src="js/init.js"></script>
+		
+	
+	
+	</body>
+
+</html>
