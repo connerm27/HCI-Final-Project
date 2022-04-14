@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+	<!--
+	*****************************************************
+	Group Members: Conner Montgomery, Nathaniel Wainwright *place names here*
+
+    Project: RentManager
+
+	Notes:  We used an open-source CSS Framework called MaterializeCSS.  It works similar to bootstrap 
+    and allowed us to use the predefined css to better and more consistently design our UI, as well as
+    integrate the "grid system" for responsive layout.  
+	*****************************************************
+    -->
+	
+	<head>
+		<!-- HTML Setup -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		
+		<!-- Title of Webpage (in tab) --->
+		<title>RentManager</title>
+
+  		<!-- CSS  -->
+  		<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	</head>
+
+	<body>
+		
+		<!-- NAVIGATION BAR -->
+	
+		<nav class="white" role="navigation">
+			<!-- Div contains nav-wrapper class, and container class, a is for Logo -->
+			<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">RentManager</a>
+				<!-- Menu show on large Screens -->
+				<ul class="right hide-on-med-and-down">
+        			<li><a href="index.html">Home</a></li>
+					<li><a href="pay-rent.html">Pay Rent</a></li>
+					<li><a href="maintenance-request.html">Maintenance Request</a></li>
+					<li><a href="message-landlord.html">Message Landlord</a></li>
+					<li><a href="my-profile.html">My Profile</a></li>
+				</ul>
+				<!-- Menu show on small screens -->
+      			<ul id="nav-mobile" class="sidenav">
+        			<li><a href="index.html">Home</a></li>
+					<li><a href="pay-rent.html">Pay Rent</a></li>
+					<li><a href="maintenance-request.html">Maintenance Request</a></li>
+					<li><a href="message-landlord.html">Message Landlord</a></li>
+					<li><a href="my-profile.html">My Profile</a></li>
+      			</ul>
+				<!-- Shows hamburger icon on small screens -->
+      			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    		</div>
+			
+		</nav>
+		
+		<!-- NAVIGATION BAR END -->
+		
+		<div class="spacer"></div>
+
+		<!-- BODY CONTENT -->
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col s12 m7">
+
+					<div class="cardStyle white newCard">
+
+						<h6><b>My Profile</b></h6>
+
+						<div class="cardSpacer"></div>
+
+						<p><b>Name: </b>John Doe</p>
+						<p><b>Email: </b>jdoe2388@gmail.com</p>
+
+						<div class="cardSpacer"></div>
+
+						<p><b>Complex: </b>East Townhomes</p>
+						<p><b>Unit #: </b>1521</p>
+						<p><b>Cosigner (if applicable): </b>Jane Doe</p>
+
+						<div class="cardSpacer"></div>
+
+						<p><b>My Payment Methods (default):</b></p>
+
+						<form action="#">
+							<p>
+							  <label>
+								<input name="group1" type="radio" checked />
+								<span>Account Ending in 3579</span>
+							  </label>
+							</p>
+							<p>
+							  <label>
+								<input name="group1" type="radio" />
+								<span>Credit Card Ending in 1432</span>
+							  </label>
+							</p>
+					  </form>
+						<div class="cardSpacer"></div>
+						<a class="waves-effect blue lighten-1 btn"><i class="material-icons right">file_download</i>Download Lease</a>
+
+					</div>
+
+				</div>
+
+				<!--Edit Profile Card -->
+		
+				<div class="col s12 m5">
+					<!-- Card Style adds padding to card -->
+
+					<div class="cardStyle white newCard">
+						
+						<!-- Card Heading H6-->
+
+						<h6><b>Edit Profile</b></h6>
+						<div class="row">
+							<div class="myForm col s10">
+								<div class="cardSpacer"></div>
+								 <input placeholder="Full Name" id="first_name" type="text" class="myField">
+								 
+								<input placeholder="Email" id="first_name" type="text" class="myField">
+							</div>
+						</div>
+						
+						<div class="cardSpacer"></div>						
+							<p><b>Change Password:</b></p>
+
+							<div class="row">
+								<div class="myForm col s10">
+									<div class="cardSpacer"></div>
+									 <input placeholder="Old Password" id="first_name" type="text" class="myField">
+									 
+									<input placeholder="New Password" id="first_name" type="text" class="myField">
+								</div>
+							</div>
+							<div class="cardSpacer"></div>
+
+
+
+							<div class="Spacer"></div>
+							<div class="cardSpacer"></div>
+							<a class="waves-effect blue lighten-1 btn"><i class="material-icons right">check</i>Save Changes</a>
+
+					
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<!-- FOOTER -->
+		
+		<footer class="page-footer">
+			<div class="footer-copyright">
+				<div class="container center">
+					Copyright 2022 &#169; RentManager
+      			</div>
+			</div>
+		</footer>
+		
+		
+		<!-- FOOTER END -->
+		
+		<!--  Scripts-->
+  		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  		<script src="js/materialize.min.js"></script>
+		<script src="js/init.js"></script>
+		
+	
+	
+	</body>
+
+</html>
