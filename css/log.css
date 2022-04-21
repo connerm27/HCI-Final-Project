@@ -1,0 +1,59 @@
+a.brand-logo {
+	color: #000000;
+	font-weight: bolder;
+}
+
+html,body {
+	font-family: Balsamiq Sans !important;
+	
+	
+}
+
+.nav-wrapper ul li a {
+	color: #000000;
+	
+}
+
+.page-footer, .footer-copyright {
+	background-color:#ffffff !important;
+	color: #000000 !important;
+}
+
+.spacer {
+	height: 100px;
+}
+.spacer2 {
+	height: 50px;
+}
+
+
+
+.myField {
+	margin-bottom: 20px !important;
+	border: 1px solid #000000 !important;
+	border-radius: 5px !important;
+	height: 30px !important;
+	font-size: 14px !important;
+	padding-left: 10px;
+	
+}
+
+#phone, #password, #rentmanager, #cpassword {
+	padding-left: 10px;
+}
+
+.custom-button {
+	border: 1px solid #000000;
+	padding: 5px 15px;
+	background-color: rgb(200,200,200);
+	color: #000000;
+	font-size: 14px;
+	border-radius: 5px;
+
+}
+
+.link {
+	color: #000000;
+}
+
+
